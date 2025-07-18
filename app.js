@@ -12,7 +12,7 @@ app.use('/api/auth', authRoutes);
 const PORT = process.env.PORT || 1111;
 app.listen(PORT, async () => {
   try {
-    await connect;
+    await connect();
     console.log("mongoDb connected");
   } catch (error) {
     console.log(error);
